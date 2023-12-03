@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>your cart</title>
+    <link rel="stylesheet" href="carttt.css">
+    <link rel="stylesheet" href="CSS/NavBar.css">
+
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+    <body>
+        <section>
+            <section id="header">
+                <a class="logo" href="#">Wired World</a>
+    
+                <div>
+                    <ul id="navbar">
+                        <li><a href="pro.html">Home</a></li>
+                        <li><a  href="products.html">Shop</a></li>
+                        <li><a href="test.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="wishhlist.html"><i id="heart" class="far fa-heart"></i></a></li>
+                        <li><a class="cart" href="cart.html"><i class="material-icons">shop</i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <br>
+        <section>
+            <table class="table">
+                <tr>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            <tr>
+                    <td > <img class="trash" src="trash.png" alt="delete"></td>
+                    <td><img src="shirt 1.png"style="width: 150px;" alt="pic"></td>
+                    <td> this is it's name</td>
+                    <td>65$</td>
+                    <td> <input style="width: 40px;text-align: center;" value="1" type="number"></td>
+                    <td>130$</td>
+                </tr>
+                <tr>
+                    <td > <img class="trash" src="trash.png" alt="delete"></td>
+                    <td><img src="shirt 2.jpg"style="width: 150px;" alt="pic"></td>
+                    <td> this is it's name</td>
+                    <td>70$</td>
+                    <td><input style="width: 40px;text-align: center;" value="1" type="number"></td>
+                    <td>135$</td>
+                </tr>
+                <tr>
+                   <td > <img class="trash" src="trash.png" alt="delete"></td>          
+                    <td><img src="shirt 3.png "style="width: 150px;" alt="pic"></td>
+                    <td> this is it's name</td>
+                    <td>80$</td>
+                    <td><input style="width: 40px;text-align: center;"  value="1" type="number"></td>
+                    <td>140$</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+         <section >
+            <table class="table2" >
+                <tr>
+                    <th class="coupon">COUPON</th>
+                </tr>
+                <tr>
+                    <td class="coupon">Enter your coupon code if you have one.</td>
+                </tr>
+                <tr>
+                    <td><input class="code" type=" text" placeholder ="Coupon Code">    <button class="buttonss">APPLY COUPON</button></td>
+                </tr>
+            </table>
+                <table class="table3">
+                    <tr>
+                        <th class="header" colspan="5"> CART TOTAL</th>
+                    </tr>
+                    <tr>
+                     <td class="header" >subtotal</td>
+                     <td class="price" colspan="4">215$</td>
+                    </tr>
+                    <tr>
+                        <td class="header" >shipping</td>
+                        <td class="price"colspan="4">255$</td>
+                    </tr>
+                    <tr>
+                        <td style="border-top: 1px solid #000;" class="header" >Total</td>
+                        <td style="border-top: 1px solid #000;"class="price"colspan="4">465$</td>
+                    </tr>
+                    <tr>
+                        <td  colspan="5"><button class="buttonss">Proceed to checkout</button></td>
+                    </tr>
+                </table>
+         </section>
+         
+    </body>
+    </html>

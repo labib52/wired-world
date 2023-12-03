@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42a3832eaa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            width: 100%;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+            
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px;
+        }
+        header{
+            text-align: center;
+        }
+
+        article {
+            background-color: #eb9e10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        #navbar li a.blog {
+            color: #eb9e10;
+        }
+    </style>
+     <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+     <script src="{% static 'network/functions.js' %}"></script>
+     
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/NavBar.css">
+</head>
+
+<body>
+    <section id="header">
+        <a class="logo" href="pro.html">Wired World</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="pro.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a class="blog" href="test.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="wishhlist.html"><i id="heart" class="far fa-heart"></i></a></li>
+                <li><a href="cart.html"><i class="material-icons">shop</i></a></li>
+            </ul>
+        </div>
+    </section>
+    <header class="aa">
+        <h1>My Blog</h1>
+        <p>Welcome to my blog!</p>
+    </header>
+    <main>
+        <article>
+            <img src="blog-post-1.jpg" alt="Blog post image">
+            <h2>Yassin Labib</h2>
+            <p>2021/06213</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in elit vel nisi fringilla fringilla ac
+                id ipsum. Nulla porttitor tristique dolor, vel molestie nibh varius nec. Sed auctor nulla non sodales
+                venenatis.</p>
+        </article>
+        <article>
+            <img src="blog-post-2.jpg" alt="Blog post image">
+            <h2>Youssef Sherine</h2>
+            <p>By Jane Smith | March 15, 2023</p>
+            <p>Sed feugiat sollicitudin urna eu malesuada. Maecenas et dui odio. Aliquam eleifend convallis sapien id
+                hendrerit. Aliquam id nibh sed felis convallis commodo. Sed elementum quam ac finibus lobortis.</p>
+        </article>
+        <article>
+            <img src="blog-post-3.jpg" alt="Blog post image">
+            <h2>Amgad Emad</h2>
+            <p>By Bob Johnson | March 13, 2023</p>
+            <p>Pellentesque eget orci et risus pellentesque sodales. Nam euismod pharetra nisi, a pulvinar ipsum commodo
+                ac. Suspendisse feugiat, nisl id congue tincidunt, lorem dolor malesuada nunc, sit amet tincidunt elit
+                dolor vel mauris.</p>
+        </article>
+    </main>
+    <section id="f">
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help
+                            the upcoming programmers with the code. Scanfcode focuses on providing the most efficient
+                            code or snippets as the code wants to be simple. We will help programmers build up concepts
+                            in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap,
+                            JavaScript, PHP, Android, SQL and Algorithm.</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                            <a href="#">Scanfcode</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
