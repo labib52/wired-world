@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frontend Shopping Cart</h1>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <h2>Available Products</h2>
+    <ul id="product-list">
+        <li data-id="1" data-name="Product 1" data-price="10">Product 1 - $10 <button onclick="addToCart(1, 'Product 1', 10)">Add to Cart</button></li>
+        <li data-id="2" data-name="Product 2" data-price="20">Product 2 - $20 <button onclick="addToCart(2, 'Product 2', 20)">Add to Cart</button></li>
+        <li data-id="3" data-name="Product 3" data-price="30">Product 3 - $30 <button onclick="addToCart(3, 'Product 3', 30)">Add to Cart</button></li>
+    </ul>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(id, name, price) {
+            const item = { id, name, price };
+            cart.push(item);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            const totalElement = document.getElementById('total');
+
+            // Clear previous items
+            cartItemsElement.innerHTML = '';
+
+            // Update cart items
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price}`;
+                cartItemsElement.appendChild(li);
+            });
+
+            // Update total
+            total = cart.reduce((acc, item) => acc + item.price, 0);
+            totalElement.textContent = total;
+        }
+
+        function checkout() {
+            alert(`Checkout completed! Total: $${total}`);
+            // Reset the cart after checkout
+            cart = [];
+            updateCart();
+        }
+    </script>
+</body>
+</html>
