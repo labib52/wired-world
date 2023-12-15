@@ -10,7 +10,7 @@ if(isset ($_POST[ 'submit'])){
     $email = $_POST['email'];
     $subject = $_POST['subject'];
 
-$sq1 = "INSERT INTO feedback (firstname, lastname, email, subject) 
+$sql = "INSERT INTO feedback (firstname, lastname, email, subject) 
 VALUES ('$first_name','$last_name','$email','$subject')";
 
 if (mysqli_query ($conn, $sql)){
