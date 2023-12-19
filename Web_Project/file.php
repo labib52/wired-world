@@ -5,7 +5,7 @@ if($conn===false){
 }
 if(isset ($_POST[ 'submit'])){
     // Taking all 5 values from the form data(input)
-    $first_name = $_POSTI ['fname'];
+    $first_name = $_POST ['fname'];
     $last_name = $_POST['lname'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
@@ -20,7 +20,7 @@ echo
 . " to view the updated data‹/h3>";
 } else{
 echo "ERROR: Hush! Sorry $sql. "
-. mysqli_error($conn);
+.mysqli_error($conn);
 }
 }
 mysqli_close($conn);
